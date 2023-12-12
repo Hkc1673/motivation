@@ -15,7 +15,7 @@ const SignUpScreen = () => {
       );
       console.log('User registered successfully!', response.user.uid);
     } catch (error) {
-      console.error('Error signing up:', error);
+      console.error('Error sign up:', error);
     }
   };
 
