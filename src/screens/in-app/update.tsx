@@ -1,11 +1,12 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-const DashBoard = () => {
+
+const Update = () => {
   return (
     <View>
-      <Text>Dashboard Page</Text>
+      <Text>Update</Text>
     </View>
   );
 };
 
-export default DashBoard;
+export default Update;

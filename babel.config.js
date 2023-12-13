@@ -11,6 +11,7 @@ module.exports = {
           '@config': './src/config',
           '@store': './src/store',
           '@screens': './src/screens',
+          '@core': './src/core',
         },
       },
     ],
