@@ -9,6 +9,7 @@ import SignUp from '../auth/sign-up';
 import Home from '../in-app/home';
 import Create from '../in-app/create';
 import Settings from '../in-app/settings';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -39,6 +40,9 @@ const Router = () => {
             component={Home}
             options={{
               tabBarLabel: 'Home',
+              tabBarIcon: ({color, size}) => (
+                <Icon name="home" color={color} size={size} />
+              ),
             }}
           />
           <Tab.Screen
@@ -46,6 +50,9 @@ const Router = () => {
             component={Create}
             options={{
               tabBarLabel: 'Create',
+              tabBarIcon: ({color, size}) => (
+                <Icon name="plus" color={color} size={size} />
+              ),
             }}
           />
           <Tab.Screen
@@ -53,6 +60,9 @@ const Router = () => {
             component={Settings}
             options={{
               tabBarLabel: 'Settings',
+              tabBarIcon: ({color, size}) => (
+                <Icon name="cog" color={color} size={size} />
+              ),
             }}
           />
         </Tab.Navigator>

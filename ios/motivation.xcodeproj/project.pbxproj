@@ -14,6 +14,7 @@
 		3E36BF8D30E47A914EDA2F85 /* Pods_motivation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5C6A4D62F10D32A3EA53C /* Pods_motivation.framework */; };
 		581DEC6BE66604BE5784E04C /* Pods_motivation_motivationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75630440F490F89B5CD7EE7B /* Pods_motivation_motivationTests.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		E211436B2B30596000025A2B /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = E211436A2B30596000025A2B /* Fonts */; };
 		E254FFD92B28948700A9F77A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E254FFD82B28948700A9F77A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		75630440F490F89B5CD7EE7B /* Pods_motivation_motivationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_motivation_motivationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = motivation/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-motivation-motivationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motivation-motivationTests.release.xcconfig"; path = "Target Support Files/Pods-motivation-motivationTests/Pods-motivation-motivationTests.release.xcconfig"; sourceTree = "<group>"; };
+		E211436A2B30596000025A2B /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
 		E254FFD82B28948700A9F77A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F4B5C6A4D62F10D32A3EA53C /* Pods_motivation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_motivation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 		13B07FAE1A68108700A75B9A /* motivation */ = {
 			isa = PBXGroup;
 			children = (
+				E211436A2B30596000025A2B /* Fonts */,
 				E254FFD82B28948700A9F77A /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
@@ -249,6 +252,7 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				E254FFD92B28948700A9F77A /* GoogleService-Info.plist in Resources */,
+				E211436B2B30596000025A2B /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {SafeAreaView, View, Text, Button, TextInput} from 'react-native';
 import firestore from '@react-native-firebase/firestore';
 import auth from '@react-native-firebase/auth';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Feed = () => {
   const [goals, setGoals] = useState([]);
@@ -69,6 +70,7 @@ const Feed = () => {
         </View>
       ))}
       <Button title={'Sign Out'} onPress={() => auth().signOut()} />
+      <Icon name={'rocket'} size={30} color={'#900'} />
     </SafeAreaView>
   );
 };
