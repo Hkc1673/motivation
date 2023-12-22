@@ -1,11 +1,16 @@
-import * as React from 'react';
+import React, {MutableRefObject} from 'react';
+import {NavigationContainerRef} from '@react-navigation/native';
 
-export const isMountedRef = React.createRef<HTMLDivElement>();
+export const isMountedRef: MutableRefObject<React.RefObject<HTMLDivElement> | null> =
+  React.createRef();
+export const navigationRef: MutableRefObject<NavigationContainerRef<any> | null> =
+  React.createRef();
 
-export const navigationRef = React.createRef<HTMLDivElement>();
-
-// to navigate new screen
-export function navigate(name, params = null) {
+// to navigate to a new screen
+export function navigate(
+  name: string,
+  params: Record<string, any> | null = null,
+): void {
   if (isMountedRef.current && navigationRef.current) {
     // Perform navigation if the app has mounted
     navigationRef.current.navigate(name, params);
@@ -15,12 +20,14 @@ export function navigate(name, params = null) {
   }
 }
 
-// to go back previous screen
-export function goBack() {
-  navigationRef.current.goBack();
+// to go back to the previous screen
+export function goBack(): void {
+  if (navigationRef.current) {
+    navigationRef.current.goBack();
+  }
 }
 
-// if the screen is focused
-export function isFocused() {
-  return navigationRef.current.isFocused();
+// check if the screen is focused
+export function isFocused(): boolean {
+  return navigationRef.current ? navigationRef.current.isFocused() : false;
 }
